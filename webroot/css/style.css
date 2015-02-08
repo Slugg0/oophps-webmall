@@ -1,0 +1,176 @@
+@import url(links.css);
+
+/**
+ * General elements
+ */
+
+/**
+ * Reset standard as in the HTMLPHP- course
+ */
+header, footer, nav, article, section, aside, figure, figcaption, output, img {display: block;}
+html,body{margin:0;padding:0;}
+html{ overflow-y: scroll;} /* Gör att scrollbaren alltid syns */
+div#content {overflow:auto;} /* clearfix åtgärdar ev. felvisningar av bilder vid float */
+img { border: 0; }
+hr {
+  clear: both;
+  float: none;
+  width: 100%;
+  height: 1px;
+  background: black; 
+  color: black; 
+  border: none; 
+}
+
+
+
+body {
+  color: #333;
+  font: 100.01%/1.375 arial, sans-serif;
+}
+
+/**
+ * Typography
+ */
+h1 {
+  border-bottom: 1px solid #ccc;
+  text-transform: uppercase;
+}
+
+/**
+ * Alignment adjustments
+ */
+.right { float: right; }
+.left { float: left; }
+.center { display: block; margin: 0 auto; }
+.justify { text-align: justify; }
+
+/**
+ * Layout of the main page elements 
+ */
+#wrapper {
+  margin: 0 auto;
+  width: 980px; 
+  padding: 10px;
+}
+
+
+/**
+ * Layout for header
+ */
+#header {
+  position: relative;
+  margin-bottom: 43px;
+  height: 80px;
+}
+
+.siteLogo {
+  height: 120px;
+  width: auto;
+  position: absolute;
+  left: 60px;
+  margin-bottom: 100px;
+}
+
+div#siteHead {
+  display: inline-block;
+  position: absolute;
+  top: 6px;
+  left: 200px;
+}
+
+.siteTitle{
+  font-size: 48px;
+  display: block;
+}
+
+.siteSlogan{
+  position: relative;
+  font-style: italic;
+  color: #666;
+  top: -10px;
+  float: right;
+}
+
+/**
+ * Layout for navigation bar / menu
+ */
+#navbar {
+  /*  background: #999; */
+  border-top: solid 2px #ccc;
+  border-bottom: solid 2px #ccc;
+  padding-left: 0.2em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin-bottom: 1.8em;
+}
+
+
+/**
+ * Layout for main
+ */
+#main {
+  min-height: 20em;
+}
+
+.readable {
+  width: 70%;
+  padding-right: 1em;
+/*  border-right: 1px solid #ccc; */
+}
+
+
+/**
+ * Layout for footer
+ */
+#footer {
+  margin-top: 10px;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+}
+
+.siteFooter {
+  color: #666;
+}
+
+
+/**
+ * Byline
+ */
+.byline {
+	display:inline-block;
+  border-top: 1px dashed #ccc;
+  font-style: italic;
+  vertical-align:middle;
+  width:70%;
+}
+
+/**
+ * Make the text inside byline vertically centered
+ */
+div.centerTextBox{display:table;}
+.centerTextBox p{display:table-cell; vertical-align:middle; height:200px;}
+
+
+
+/**
+ * Figure
+ */
+ figure {
+	margin: 1em;
+	text-align: justify;
+}
+avatarFigWidth{
+	max-width:140px;
+}
+	
+figure.right { margin-right: 0; }
+figure.top { margin-top: 0; }
+figure.fullwidth { margin-left:0 ; margin-right:0; }
+
+figcaption {
+	font-style: italic;
+	font-size: x-small;
+	padding-right: 1em;
+}
+.avatarHeight { height: 140px; } /* IF CHANGED: Remember to change .centerTextBox height! */

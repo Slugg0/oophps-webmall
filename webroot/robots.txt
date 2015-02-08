@@ -1,0 +1,5 @@
+# http://robotstxt.org/
+
+# Disallow all robots (Could however be ignored bu the robots)
+User-agent: *
+Disallow: /
