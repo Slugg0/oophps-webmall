@@ -29,6 +29,20 @@ function myAutoloader($class) {
 }
 spl_autoload_register('myAutoloader');
 
+/**
+ * Autoloader for classes
+ * from "Beginning PHP and MySQL" -NOT YET TESTED BY ME!
+ */
+/*
+function __autoload($class){
+  require_once("src/$class.php");
+}
+*/
+
+/** Function to display the content of an array.
+ * Use it by calling i.e. <?php echo "dump($array)"; ?> or <?=dump($SERVER)?>
+ *
+ */
 
 /** Function to display the content of an array.
  * Use it by calling i.e. <?php echo "dump($array)"; ?> or <?=dump($SERVER)?>
